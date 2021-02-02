@@ -85,7 +85,7 @@ const handleUpdate = (dog) => {
     <div className="App">
       <h1>DOG LISTING SITE</h1>
       <Link to="/create">
-      <button>Create a Dog</button>
+        <button>Create a Dog</button>
       </Link>
       <hr />
       <main>
@@ -98,7 +98,7 @@ const handleUpdate = (dog) => {
             exact
             path="/create"
             render={(rp) => (
-              <Form {...rp} label="create" dog={{emptyDog}} handleSubmit={ handleCreate } />
+              <Form {...rp} label="create" dog={emptyDog} handleSubmit={ handleCreate } />
             )}
           />
           <Route

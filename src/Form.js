@@ -5,6 +5,8 @@ const Form = (props) => {
   const [formData, setFormData] = React.useState(props.dog);
 
   //FUNCTIONS
+    // This handle submit function will call the handle submit from parent.. which is to crete
+
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent Form from Refreshing
     props.handleSubmit(formData); // Submit to Parents desired function
